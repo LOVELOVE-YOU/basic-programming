@@ -55,7 +55,7 @@ DigitalW( 18, 25000, 1000 )
 
 
 
-function BMI( hight1: number, weight1: number ) {
+function BMI( hight1: number, weight1: number ) {        // การหาค่า BMI 
     let bmi: number = ( weight1 / ( hight1 * hight1 ) ) 
     if ( bmi < 18.50 ) {
         return 'น้ำหนักน้อย / ผอม'
