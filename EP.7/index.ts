@@ -87,22 +87,31 @@ console.log('เรียง ฮ - ก: ', bestNameArray)
 const me = {
     firstName: 'Catterine',
     lastName: 'Evanezl',
-    age: 15 ,
-    address: 
+    age: 15,
+    address: 'House No.46',
+    villageNo: 9,
+    road: 'Bang Sue',
+    subDistrict: 'Bang Sue sub-district',
+    district: 'Bang Sue district',
+    province: 'Bangkok',
+    postalCode: 10800,
+    number: 803-980-1300,
+    phoneNumber: 107-894-3795,
+    email: 'Babyb0y@gmail.com'
 }
 
 // ประวัติส่วนตัว
 
-// ชื่อ: Catterine
-// นามสกุล: Evanezl
+// ชื่อ: แคทเทอรีน
+// นามสกุล: อีวาเนซล์
 // อายุ: 15
-// ที่อยู่ปัจจุบันเลขที่:
-// หมู่ที่:
-// ถนน:
-// ตำบล/แขวง:
-// อำเถอ/เขต:
-// จังหวัด:
-// รหัสไปรษณีย์:
-// โทรศัพท์:
-// มือถือ:
-// อีเมล์:
+// ที่อยู่ปัจจุบันเลขที่: บ้านเลขที่ 46
+// หมู่ที่: หมู่ 9
+// ถนน: บางซื่อ
+// ตำบล/แขวง: แขวงบางซื่อ
+// อำเถอ/เขต: เขตบางซื่อ
+// จังหวัด: กรุงเทพมหานคร
+// รหัสไปรษณีย์: 10800
+// โทรศัพท์: 803-980-1300
+// มือถือ: 107-894-3795
+// อีเมล์: Babyb0y@gmail.com
