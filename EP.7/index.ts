@@ -2,7 +2,7 @@ const score = [10, 23, 26, 30, 33]
 
 let sum: number = 0
 
-for (let i = 0; i < score.length; i++ ) {
+for (let i = 0; i < score.length; i++) {
     sum = sum + score[i]
 }
 
@@ -27,10 +27,10 @@ console.log(fullName.slice(0, fullName.indexOf(' ')))
 
 //-------------------------------------------------------------------
 
-const myAnimals: string = 'แมวเหมียว*หมาบ้อกแบ้ก*คาปิบาร่าบรึ๋นๆ*แพนด้าหนี่ห่าว'
-const myAnimalsArray: string[] = myAnimals.split('*')
+const myAnimals1: string = 'แมวเหมียว*หมาบ้อกแบ้ก*คาปิบาร่าบรึ๋นๆ*แพนด้าหนี่ห่าว'
+const myAnimals1Array: string[] = myAnimals1.split('*')
 
-console.log(myAnimalsArray)
+console.log(myAnimals1Array)
 
 //--------------------------------------------------------------------
 
@@ -66,7 +66,7 @@ console.log('เรียง A - Z: ', fruits)
 fruits.reverse() // เรียง Z - A
 console.log('เรียง Z - A: ', fruits)
 
-const fruitsSlice = fruits.slice(0,2)
+const fruitsSlice = fruits.slice(0, 2)
 
 console.log('ตัดออก: ', fruitsSlice)
 
@@ -84,21 +84,32 @@ console.log('เรียง ฮ - ก: ', bestNameArray)
 
 //------------------------------------------------------------------------
 
-const me = {
+const aboutMe = {
     firstName: 'Catterine',
     lastName: 'Evanezl',
     age: 15,
-    address: 'House No.46',
-    villageNo: 9,
-    road: 'Bang Sue',
-    subDistrict: 'Bang Sue sub-district',
-    district: 'Bang Sue district',
-    province: 'Bangkok',
-    postalCode: 10800,
-    number: 803-980-1300,
-    phoneNumber: 107-894-3795,
-    email: 'Babyb0y@gmail.com'
+    address: {
+        addressm: 'House No.46',
+        villageNo: 9,
+        road: 'Bang Sue',
+        subDistrict: 'Bang Sue sub-district',
+        district: 'Bang Sue district',
+        province: 'Bangkok',
+        postalCode: 10800,
+    },
+    numbert: 803 - 980 - 1300,
+    phoneNumber: 107 - 894 - 3795,
+    email: 'Babyb0y@gmail.com',
+    bFriend: {
+        tName: 'Applepie',
+        tLastname: 'Custard',
+        akaName: 'FOOD'
+    }
 }
+
+// aboutMe.firstName = 'PowerPuff'
+console.log(aboutMe.bFriend.tName)
+
 
 // ประวัติส่วนตัว
 

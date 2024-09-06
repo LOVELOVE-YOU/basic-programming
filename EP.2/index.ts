@@ -48,7 +48,8 @@ function grade0(homework: number, midterm: number, final: number) {
         return 'grade C'
     } else if (score < 80) {
         return 'grade B'
-    } else if (score >= 80) { 
-        return 'grade A' }
+    } else if (score >= 80) {
+        return 'grade A'
+    }
 }
 console.log(grade0(20, 25, 35))

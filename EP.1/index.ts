@@ -1,9 +1,9 @@
 const firstName: string = 'Anchana'
 let y: number = 10
 y = 20
-let  isWannaGoHome: boolean = true
+let isWannaGoHome: boolean = true
 
-console.log(firstName) 
+console.log(firstName)
 console.log(y)
 console.log(isWannaGoHome)
 
