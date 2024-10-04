@@ -1,23 +1,23 @@
 // for loop-----------------------
 
-let sum: number = 0
+let sum1: number = 0
 
 for (let i = 1; i <= 365; i++) {
-    sum = sum + i
+    sum1 = sum1 + i
 }
-console.log('Total: ', sum) 
+console.log('Total: ', sum1) 
 
 
 // while loop--------------------
 
-let sum: number = 0
+let sum2: number = 0
 let i: number = 1
 while(i <= 31) {
-    sum = sum + i
+    sum2 = sum2 + i
     i++
 }
 
-console.log('Total: ', sum)
+console.log('Total: ', sum1)
 
 // the do while loop-------------
 
@@ -64,14 +64,14 @@ for (let i = 1; i <= 19; i++) {
 
 
 
-const cars: string[] = ['Toyota', 'Honda', 'Suzuki', 'Yamaha', 'Mazda']
+const cars1: string[] = ['Toyota', 'Honda', 'Suzuki', 'Yamaha', 'Mazda']
 const num: number[] = [1, 2, 3, 4, 5]
 const bool: boolean[] = [true, true, false, false]
 
 //const str: string = 'ชอบก็จัดประหยัดทำไม'
 //console.log(str.charAt(2))
 
-const cars: string[] = ['Toyota', 'Honda', 'Suzuki', 'Yamaha', 'Mazda', 'BYD']
+const cars2: string[] = ['Toyota', 'Honda', 'Suzuki', 'Yamaha', 'Mazda', 'BYD']
 //console.log(cars[2].length)
 
 //cars[2] = 'Isuzu'
