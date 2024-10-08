@@ -1,41 +1,41 @@
-// for loop
+// loop --------------------------------------------------------
 
 for (let i = 0; i <= 10; i++) {
     console.log(i)
 }
 
-// ตัวแปรในการเก็บจำนวนรอบ 
-// let i = 0;
+let i = 0;
 while (i <= 10) {
     console.log(i)
 }
 // ARRAY --------------------------------------------------------
 
-// const arr = ['Totota',2,true] // ควรใช้ดาต้าไทป์ ชนิดเดียวกัน!
+// const arr = ['Totota',2,true] // ควรใช้ดาต้าไทป์ที่เป็น ชนิดเดียวกัน!
 
-// const cars0 = ['Toyota', 'BMW', 'Honda']
-//  cars0.length // 3 ( -1 เสมอ )
-//  cars0[cars0.length-1]
-//  cars0[2] = 'Suzuki' // เพิ่มค่าเข้าแทนที่ Readdsigh
-
-//  for (let i = 0; i < cars0.length; i++) {
-//     console.log('for',cars0[i])
+// const cars = ['Toyota', 'BMW', 'Honda']
+//  cars.length // 3 ( -1 เสมอ ) เช็คว่ามีจำนวนสมาชิกกี่ตัว
+//  cars[cars.length-1]
+//  cars[2] = 'Suzuki' // เพิ่มค่าเข้าแทนที่ Readdsigh ค่า 
+//----------------------------------------------
+//  for (let i = 0; i < cars.length; i++) {
+//     console.log('for',cars[i])
 //  }
-
+// ---------------------------------------------
 //  let i = 0
 //  while (i< cars0.length) {
 //     console.log('while', cars0[i]);
 //         i++;
 //  }
+//ARRAY METHOD----------------------------------------------------
 
-const cars0 = ['Toyota', 'BMW', 'Honda'];
-cars0.pop()  // ['Toyota', 'BMW']
-cars0.push('Benz')
-cars0.shift() // [ 'BMW', 'Honda']
-cars0.unshift('BmX')
+const cars = ['Toyota', 'BMW', 'Honda'];
+cars.pop()  // ['Toyota', 'BMW']
+cars.push('Benz')
+cars.shift() // ['BMW', 'Honda']
+cars.unshift('BMX')
 
-cars0.sort()// A-Z
-cars0.reverse() // Z-A
+cars.sort()// A-Z
+cars.reverse() // Z-A
 
 //JAVASCRIPT OBJECT----------------------------------------------
 
@@ -43,6 +43,7 @@ const person = {
     firstName: 'Hana',
     lastName: 'Tabaki',
     age: 17,
+    isMale: false,
     sister: {
         firstName: 'Kaiko',
         lastName: 'Tabaki',
@@ -97,14 +98,17 @@ const peoples = [
     { name: "Luffy", age: 22 },
     { name: "Ace", age: 24 },
 ];
-// // Hard
-// for (let i = 0; i< peoples.length; i++ ) {
-//     const people: = {
-//         name: string;
-//         age: number;
-//     }[] = []
-//     } 
-// }
+
+const peopleMore:{
+    name: string;
+    age: number;
+}[] = [];
+// HARD
+for (let i = 0; i< peoples.length; i++ ) {
+    if (peoples[i].age > 18) {
+        peoples.push(peoples[i]);
+    }
+} 
 
 
 const products = [
@@ -133,6 +137,7 @@ function updatePriceWithForLoop(
     }
     return m;
 }
+//-----------------------------------------------
 
 function updatesPrice(products: {
     price: number;
@@ -144,17 +149,18 @@ function updatesPrice(products: {
     }
     );
 }
-
 console.log(products)
+
+//------------------------------------------------
 
 const numB = [1, 2, 3, 4, 5] // Change into [ '1','2','3','4','5' ]
 
 // Hard-------------------------------------------
 
-function convertToArrayString(arry: number[]) {
+function convertToArrayString(array: number[]) {
     const result: string[] = [];
     for (let i = 0; i < numB.length; i++) {
-        result.push(arry[i].toString())
+        result.push(array[i].toString())
     }
     return result
 }
@@ -171,7 +177,7 @@ console.log(convertToArrayStringWithMap(numB))
 
 //-------------------------------------------------
 
-const names = ["John Doe", "Jane Smith", "Jack Brown"];
+const names = ["John Doe", "Jane Smith", "Jack Brown"]; // ให้เปลี่ยนค่าต่างๆ ใช้ map
 
 function cutNameWithMap(array: string[]) {
     return array.map(function (element, index) {
@@ -182,7 +188,6 @@ function cutNameWithMap(array: string[]) {
         }
     })
 }
-
 console.log(cutNameWithMap(names))
 
 //--------------------------------------------------
@@ -221,7 +226,7 @@ const account = {
         this.balance = this.balance + amount
         console.log('ฝากเงิน' + amount + 'เรียบร้อยแล้ว'+ 'ยอดคงเหลือคือ' + this.balance) 
     },
-    withdraw: function(amount: number) {
+    withdraw: function(amount: number) {  // ถอนตังค์
         if (amount > this.balance) {
             console.log('เงินไม่พอ คุณมียอดเงินคงเหลือแค่' + this.balance)
             return
@@ -230,4 +235,4 @@ const account = {
         console.log('ถอนเงินจำนวน' + amount + 'ยอดเงินคงเหลือของคุณคือ' + this.balance)
     }
 }
-// This Important
+
