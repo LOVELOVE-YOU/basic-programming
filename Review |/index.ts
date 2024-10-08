@@ -1193,14 +1193,14 @@ const covid = database.filter(function (element, index) {
     return element.total_death > 5 && element.province !== 'ทั้งประเทศ'
 })
 
-const covidDeathOnlyProvince_ = covid0.map(function (element, index) {
+const covidDeathOnlyProvince_ = covid.map(function (element, index) {
     return ({
         province: element.province,
         total_Death: element.total_death
     })
 })
 
-console.log(covidDeathOnlyProvince)
+console.log(covidDeathOnlyProvince_)
 
 // const covid0 = database.filter(function(element, index){
 //     return element.total_death > 5 && element.province !== 'ทั้งประเทศ'
